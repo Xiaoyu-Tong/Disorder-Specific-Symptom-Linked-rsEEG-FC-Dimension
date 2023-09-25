@@ -1,1 +1,1 @@
-# Disorder-Specific Symptom-Linked FC Dimension
+# Disorder-Specific Symptom-Linked rsEEG FC Dimension
