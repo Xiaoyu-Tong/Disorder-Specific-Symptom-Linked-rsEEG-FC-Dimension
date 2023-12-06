@@ -1,3 +1,3 @@
 # Disorder-Specific Symptom-Linked rsEEG FC Dimension
 
-(Under construction)
+In the _Nature Mental Health_ paper
