@@ -34,7 +34,7 @@ Fe_testArchive = np.zeros([foreground_test.shape[0],nPC,len(alpha_values)])
 for i in range(len(alpha_values)): # derive contrastive connectivity features
     alpha = alpha_values[i]
     mdl_CPCA = contrastive.CPCA(n_components=nPC)
-    mdl_CPCA.fit(foreground_train, background_data) # you may run into issues if your dimensionality > 1000. 
+    mdl_CPCA.fit(foreground_train, background_data)
     # either refer to the original GitHub repository of cPCA or I may be able to offer help
     Fe_train = mdl_CPCA.transform(foreground_train,alpha_selection='manual',alpha_value = alpha)
     Fe_test = mdl_CPCA.transform(foreground_test,alpha_selection='manual',alpha_value = alpha)
