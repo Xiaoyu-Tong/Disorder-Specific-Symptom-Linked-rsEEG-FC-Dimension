@@ -2,7 +2,7 @@ clear
 
 loadClinicalData
 
-%% test consistency using CV
+%% test consistency using cross-validation (CV)
 [subName,IAA,IBB]=unique(subName,'stable');
 templabel=[]; tempscore=[]; IDX_test=[];
 nRound = 5;
