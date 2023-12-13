@@ -1,5 +1,5 @@
-clear
-EEGband = 'ALPHA';
+
+EEGband = 'ALPHA'; % specify the frequency band
 % Load EEG data
 load('ABC_Austim_EEG_powenv_Russ31ROIs.mat') % load your own EEG data
 % the goal is to align clinical data with neuroimaging data and exclude
