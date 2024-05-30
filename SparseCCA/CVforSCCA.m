@@ -69,7 +69,7 @@ for iRound = 1:nRound
         Fe_train=Fe_all(idx_train,:); target_train=target_all(idx_train,:);
         target_test=allMeasure(idx_test,:);
    
-        [Wx,Wy,R]=SparseCCA_PMD_noDevariance(Fe_train,target_train,ncomp,max_iter,lambda1,lambda2);
+        [Wx,Wy,R]=SparseCCA(Fe_train,target_train,ncomp,max_iter,lambda1,lambda2);
     % intermediate
         r_temp = zeros(ncomp,ncomp);
         rSign_temp = zeros(ncomp,ncomp);
